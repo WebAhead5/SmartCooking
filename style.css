@@ -5,11 +5,11 @@ grid-template-areas: "Title Title Title"
 "Choosing Picture_info Ingredients"
 "Choosing Picture_info Ingredients"
 "Choosing  Picture_info  Ingredients"
-"Teach_Me Teach_Me Ingredients";
-grid-gap: 0px;
+"Teach_Me Teach_Me Teach_Me";
+grid-gap: 5px;
 margin: auto;
 height: 100vh;
-width: 90vw;
+width: 100vw;
 background: lightgray;
 user-select: none;
 }
@@ -25,28 +25,30 @@ user-select: none;
     font-size: 35px;
     user-select: none;
     padding-top:  20px;
-    max-height: 60%;
 
 }
 
 .Choosing {
     grid-area: Choosing;
     height: 30%;
-    width: 30%;
+    width: 40%;
     background: yellowgreen;
     color: aliceblue;
     font-style: oblique;
-    justify-content: center;
-    margin-left: 70px;
-    padding-left: 25px;
     font-size: 29px;
+    justify-self: center;
     font-weight: bold;
-    margin-right: 40px;
     user-select: none;
+    border-style: dashed;
+    padding-left: 30px;
+    padding-top: 20px;
 
     
 }
 
+#Recipes {
+  margin-left: 40px;
+}
 
 .Picture_info {
   grid-area: Picture_info;
@@ -95,50 +97,49 @@ user-select: none;
 
 .Ingredients{
     grid-area: Ingredients;
-    height: 70%;
+    height: 60%;
     width: 35%;
     color: aliceblue;
-    font-style: oblique;
-    justify-content: center;
-    margin-left: 70px;
-    padding-left: 25px;
     font-size: 29px;
     font-weight: bold;
-    margin-right: 40px;
-
+    position: relative;
+    text-align: center;
 }
 
 .Ingredients img {
   width: 400px;
-  height: 500px;
-
-  
+  height: 450px;  
+  border-style:ridge;
 }
 
+#ingredient {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 
 
 
 .Teach_Me {
     grid-area: Teach_Me;
-    padding-left: 550px;
+    justify-self: center;
  
 }
 
 button {
-    height: 50%;
-    width: 50%;
+    height: 100px;
+    width: 150px;
     background: grey;
     color: aliceblue;
     font-style: oblique;
-    align-self: center;
-    justify-self: center;
     border: 2px solid black;
     border-radius: 25%;
     font-size: 29px;
     font-weight: bold;
-    margin-right: 40px;
-    user-select: none;
+    margin-right: 50px;
+    user-select: none; 
 }
 
 

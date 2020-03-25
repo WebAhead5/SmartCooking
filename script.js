@@ -16,11 +16,16 @@ fetch(url)
     option.appendChild(Recipe);
     document.getElementById("Recipes").appendChild(option);
     //
+    var my_list =document.createElement("ul");
+    var elem = document.createElement("li");
+    elem.textContent=RecipeMang[Index1].ingredients;
+    my_list.appendChild(elem);
+    document.getElementById("ingredient").appendChild(my_list);
 
 
         }
     });
-   
+
       
     function getref()
     {
@@ -30,15 +35,8 @@ fetch(url)
         console.log(strUser);
         var Index1 = RecipeMang.findIndex(checkIndex) 
         function checkIndex(RecipeMang) {
-        return RecipeMang.title == strUser;      }
-        console.log(Index1);
-        
-
-
-    }
-    console.log(RecipeMang);
-
-
-
-
-
+        return RecipeMang.title == strUser;}
+        var href=(RecipeMang[Index1].href);
+        var win = window.open(href, '_blank');
+        } 
+    
