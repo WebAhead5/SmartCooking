@@ -27,11 +27,14 @@ fetch(url)
 
         var e = document.getElementById("Recipes");
         var strUser = e.options[e.selectedIndex].value;
-        console.log(strUser);
+       // console.log(strUser);
         var Index1 = RecipeMang.findIndex(checkIndex) 
         function checkIndex(RecipeMang) {
         return RecipeMang.title == strUser;      }
-        console.log(Index1);
+        var href=(RecipeMang[Index1].href);
+        var win = window.open(href, '_blank');
+
+       
         
 
 
