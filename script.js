@@ -15,16 +15,20 @@ fetch(url)
     var Recipe = document.createTextNode(RecipeMang[i].title);
     option.appendChild(Recipe);
     document.getElementById("Recipes").appendChild(option);
-    //
-    var my_list =document.createElement("ul");
-    var elem = document.createElement("li");
-    elem.textContent=RecipeMang[Index1].ingredients;
-    my_list.appendChild(elem);
-    document.getElementById("ingredient").appendChild(my_list);
+    }
+});
+    //var my_list =document.createElement("ul");
+    //var elem = document.createElement("li");
+
+   // elem.textContent=RecipeMang[Index1].ingredients;
+  //  my_list.appendChild(elem);
+   // document.getElementById("ingredient").appendChild(my_list);
 
 
-        }
-    });
+        
+
+
+   
 
       
     function getref()
@@ -39,5 +43,33 @@ fetch(url)
         var href=(RecipeMang[Index1].href);
         var win = window.open(href, '_blank');
 
-
     }
+
+        function get_ingredient()
+        {
+        
+    
+
+        var my_list =document.createElement("ul");
+        var elem = document.createElement("li");
+        
+        
+        var e = document.getElementById("Recipes");
+        var strUser = e.options[e.selectedIndex].value;
+        var Index1 = RecipeMang.findIndex(checkIndex) 
+        function checkIndex(RecipeMang) {
+        return RecipeMang.title == strUser;}
+        
+        var picurl=document.getElementById("img1");
+        {
+          picurl.src==RecipeMang[Index1].thumbnail;
+        }
+        
+        elem.textContent=RecipeMang[Index1].ingredients;
+        my_list.appendChild(elem);
+        document.getElementById("ingredient").appendChild(my_list);
+        
+        
+        } 
+
+
