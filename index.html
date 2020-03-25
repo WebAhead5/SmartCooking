@@ -16,9 +16,9 @@
 
     <div class="Choosing" >
       Please Choose Your Recipe
-      <div class="Scrolling1">
-        <select id="Recipes">
-          <option value="None">-- Select --</option>
+      <div class="Scrolling1" onclick=get_ingredient()>
+        <select id="Recipes" >
+          <option value="None" >-- Select--</option>
         </select>
       </div>
       
@@ -28,12 +28,12 @@
 
  
   <div class="Picture_info"> 
-    <img src="Header.jpg"> </img>
+    <img src="Header.jpg" id="Picture"> </img>
   </div>
 
 
   <div class="Ingredients">
-    <img src="ingredients.jpg"> </img>  
+    <img src="ingredients.jpg" > </img>  
       <p id ='ingredient'> 
       </p>
 
