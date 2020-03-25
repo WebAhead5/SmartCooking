@@ -9,21 +9,19 @@ fetch(url)
     })
 
     .then(function (data) {
-        for(let i=0 ;i <data.results.length;i++)
-      RecipeMang.push({href:data.results[i].href,ingredients:data.results[i].ingredients,thumbnail:data.results[i].thumbnail,title:data.results[i].title});
-    })
+        for(let i=0 ;i <data.results.length;i++){
+    RecipeMang.push({href:data.results[i].href,ingredients:data.results[i].ingredients,thumbnail:data.results[i].thumbnail,title:data.results[i].title});
+    var option =document.createElement("OPTION");
+    var Recipe = document.createTextNode(RecipeMang[i].title);
+    option.appendChild(Recipe);
+    document.getElementById("Recipes").appendChild(option);
+    //
+        }
+    });
 
-    function getref() {
-        var a = document.createElement('a');
-        var linkText = document.createTextNode("my title text");
-        a.appendChild(linkText);
-        a.href = data[i].ref;
-        document.body.appendChild(a);
-        console.log(a.href);
-         document
+    console.log(RecipeMang);
 
-        
 
-    };
-    
+
+
 
