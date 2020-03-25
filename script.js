@@ -16,9 +16,26 @@ fetch(url)
     option.appendChild(Recipe);
     document.getElementById("Recipes").appendChild(option);
     //
+
+
         }
     });
+   
+      
+    function getref()
+    {
 
+        var e = document.getElementById("Recipes");
+        var strUser = e.options[e.selectedIndex].value;
+        console.log(strUser);
+        var Index1 = RecipeMang.findIndex(checkIndex) 
+        function checkIndex(RecipeMang) {
+        return RecipeMang.title == strUser;      }
+        console.log(Index1);
+        
+
+
+    }
     console.log(RecipeMang);
 
 
