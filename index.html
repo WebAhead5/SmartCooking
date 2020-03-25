@@ -16,9 +16,9 @@
 
     <div class="Choosing" >
       Please Choose Your Recipe
-      <div class="Scrolling1" onclick = get_ingredient()>
-        <select id="Recipes">
-          <option value="None">-- Select --</option>
+      <div class="Scrolling1" onclick=get_ingredient()>
+        <select id="Recipes" >
+          <option value="None" >-- Select--</option>
         </select>
       </div>
       
@@ -28,17 +28,25 @@
 
  
   <div class="Picture_info"> 
-    <img  id ="img1" src="Header.jpg"> </img>
+    <img src="Header.jpg" id="Picture"> </img>
   </div>
 
 
   <div class="Ingredients">
-    <img src="ingredients.jpg"> </img>  
+    <img src="ingredients.jpg" > </img>  
       <p id ='ingredient'> 
       </p>
 
   </div>
  
+  <div class="FoodbyIngredients">
+  input your Ingredients: <input type="text" id="Ingerfood" placeholder="write ingredients please">
+  <button onclick=IngFunction()>Run</button>
+
+
+
+  </div>
+
  <div class="Teach_Me"> 
   <button onclick= getref() id= "SearchButton"> Learn More </button>
   </div> 
