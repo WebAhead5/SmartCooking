@@ -12,3 +12,5 @@ fetch(url)
         for(let i=0 ;i <data.results.length;i++)
     RecipeMang.push({href:data.results[i].href,ingredients:data.results[i].ingredients,thumbnail:data.results[i].thumbnail,title:data.results[i].title});
     });
+
+
