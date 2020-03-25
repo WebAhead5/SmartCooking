@@ -60,22 +60,18 @@ user-select: none;
 
 
 .Picture_info img {
-  width: 90%;
+  width: 80%;
   height: 100%;
 
-  
-}
 
+}
 
 .Scrolling1 {
     grid-area: Scrolling1;
     width: 200px;
-    display: none;
     padding-top: 40px;
 
-}
-
-
+}Choosing
   .Scrolling1 li {
     background-color: #eee;
     color: black;
@@ -84,62 +80,101 @@ user-select: none;
     text-decoration: none;
   }
   
-  .Scrolling1 li:hover {
-    background-color: #ccc;
-  }
-  
-  .Choosing:hover .Scrolling1 {
-    display: block;
-}
 
-
-
+ 
 
 .Ingredients{
     grid-area: Ingredients;
-    height: 60%;
-    width: 35%;
+    height: 100%;
+    width: 50%;
     color: aliceblue;
-    font-size: 29px;
+    background-color: blueviolet;
+    font-size: 30px;
     font-weight: bold;
     position: relative;
     text-align: center;
-}
-
-.Ingredients img {
-  width: 400px;
-  height: 450px;  
-  border-style:ridge;
+    border-style:dashed;
+    font-family: 'Dekko'
 }
 
 #ingredient {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  text-align: start;
+  font-family: 'Dekko'
+
 }
-
-
 
 
 .Teach_Me {
     grid-area: Teach_Me;
     justify-self: center;
+    padding-right:100px;
  
 }
 
-button {
-    height: 100px;
-    width: 150px;
-    background: grey;
-    color: aliceblue;
-    font-style: oblique;
-    border: 2px solid black;
-    border-radius: 25%;
-    font-size: 29px;
-    font-weight: bold;
-    margin-right: 50px;
-    user-select: none; 
-}
+button{
+  border: none;
+  background: red;
+  color: #ffffff !important;
+  font-weight: 100;
+  padding: 20px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+  }
 
+  button:hover {
+    color: #404040 !important;
+    font-weight: 700 !important;
+    letter-spacing: 3px;
+    background: none;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.3s ease 0s;
+    }
+    
+    select {
+      width: 140px;
+      height: 35px;
+      padding: 4px;
 
+      border-radius:4px;
+      box-shadow: 2px 2px 8px #999;
+      background: #eee;
+      border: none;
+      outline: none;
+      display: inline-block;
+      -webkit-appearance:none;
+      -moz-appearance: none;
+      appearance: none;
+      cursor: pointer;
+      }
+      label {
+      position: relative;
+      }
+      label:after {
+      content:'<>';
+      font: 11px "Consolas", monospace;
+      color: #666;
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg);
+      right: 8px; 
+      top:2px;
+      padding: 0 0 2px;
+      border-bottom: 1px solid #ddd;
+      position: absolute;
+      pointer-events: none;
+      }
+      label:before {
+      content: '';
+      right: 6px; 
+      top:0px;
+      width: 20px; 
+      height: 20px;
+      background: #eee;
+      position: absolute;
+      pointer-events: none;
+      display: block;
+      }
