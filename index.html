@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Dekko' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"> </script>
 </head>
@@ -11,29 +12,32 @@
 
   <div class="mainBody">
     <div class="Title"> 
-      SmartCooking
+      SmartCooking<br>
+      Cooking Just Become Easier!
     </div>
 
     <div class="Choosing" >
       Please Choose Your Recipe
       <div class="Scrolling1" onclick=get_ingredient()>
+        <label>
         <select id="Recipes" >
           <option value="None" >-- Select--</option>
         </select>
+      </label>
+  
       </div>
-      
+    
 
     </div>
-    <p id="demo"></p>
 
  
   <div class="Picture_info"> 
-    <img src="Header.jpg" id="Picture"> </img>
+    <img src="Header.png" id="Picture"> </img>
   </div>
 
 
-  <div class="Ingredients">
-    <img src="ingredients.jpg" > </img>  
+  <div class="Ingredients"> <br>
+    Ingredients <hr> 
       <p id ='ingredient'> 
       </p>
 
@@ -51,9 +55,16 @@
   <button onclick= getref() id= "SearchButton"> Learn More </button>
   </div> 
  
+
+
+
+
+
   
   </body>
    
+
+  
 
 
 </html>
