@@ -1,1 +1,1 @@
-# SmartCooking
+# EasyT
