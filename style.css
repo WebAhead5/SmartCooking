@@ -1,6 +1,7 @@
 .mainBody {
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: auto auto 1fr 1fr 1fr auto auto;
 grid-template-areas: "Title Title Title"
 "Choosing Picture_info Ingredients"
 "Choosing Picture_info Ingredients"
@@ -30,7 +31,7 @@ user-select: none;
 
 .Choosing {
     grid-area: Choosing;
-    height: 30%;
+    height: fit-content;
     width: 40%;
     background: yellowgreen;
     color: aliceblue;
@@ -41,7 +42,7 @@ user-select: none;
     user-select: none;
     border-style: dashed;
     padding-left: 30px;
-    padding-top: 20px;
+    
 
     
 }
@@ -55,6 +56,8 @@ user-select: none;
   height: 70%;
   width: 100%;
   border-radius: 50px;
+  padding-top: 50px;
+  object-fit: cover;
 
 }
 
@@ -62,6 +65,7 @@ user-select: none;
 .Picture_info img {
   width: 80%;
   height: 100%;
+
 
 
 }
@@ -85,21 +89,24 @@ user-select: none;
 
 .Ingredients{
     grid-area: Ingredients;
-    height: 100%;
+    height:100%;
     width: 50%;
     color: aliceblue;
     background-color: blueviolet;
     font-size: 30px;
     font-weight: bold;
-    position: relative;
     text-align: center;
     border-style:dashed;
-    font-family: 'Dekko'
+    font-family: 'Dekko';
+    display: block;
+ overflow: auto;
 }
 
 #ingredient {
   text-align: start;
-  font-family: 'Dekko'
+  font-family: 'Dekko';
+  height: fit-content;
+
 
 }
 

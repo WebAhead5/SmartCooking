@@ -12,12 +12,13 @@
 
   <div class="mainBody">
     <div class="Title"> 
-      SmartCooking
+      SmartCooking <br>
+      Cooking Just Become Easier!
     </div>
 
     <div class="Choosing" >
       Please Choose Your Recipe
-      <div class="Scrolling1" onclick=get_ingredient()>
+      <div class="Scrolling1" onclick=get_ingredient() onkeydown=get_ingredient() onkeyup=get_ingredient() >
         <label>
         <select id="Recipes" >
           <option value="None" >-- Select--</option>
@@ -49,8 +50,8 @@
 
 
   <div class="FoodbyIngredients">
-    input your Ingredients: <input type="text" id="Ingerfood" placeholder="write ingredients please">
-    <button onclick=IngFunction()>Run</button>
+    Type your Ingredients: <input type="text" id="Ingerfood" placeholder="Your Ingredients">
+    <button onclick=IngFetch()>Run</button>
 
 
   
