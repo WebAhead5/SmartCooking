@@ -1,5 +1,5 @@
 # SMART COOKING
-**Thinking cooking is a hard task** :question: :exploding_head:
+**Thinking cooking is a hard task** :question: 
 
 **Well, we'll change your mind ..** :heavy_check_mark: 
 <!-- https://webahead5.github.io/SmartCooking -->
