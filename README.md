@@ -3,7 +3,7 @@
 
 **Well, we'll change your mind ..** :heavy_check_mark: 
 <!-- https://webahead5.github.io/SmartCooking -->
- Check our [Website](https://webahead5.github.io/SmartCooking):COOKING:
+ Check our [Website](https://webahead5.github.io/SmartCooking)
 ---
 The website is built in a way that gives the user an easy way to get his favourite recipes from our selected recipes list !!
 Upon selecting the recipe name from the selecting scrollbar, the ingredients will be loaded on the right side of the page.If the user want to get extra details about the instructions of the recipe ,he can click on ***learn more*** button .As a result, an external tab will pop on the broswer with instructions.
