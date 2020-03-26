@@ -26,7 +26,7 @@ In addition to that , we expanded our website capability where we listen to our 
     User: Enter the website without typing an ingredient
     Result : User will see a default list of recipes that he choose from.
 # 2nd Scenario 
-    User: Enter type an ingredient in the box and click the run button
+    User: Type an ingredient in the box and click the run button
     Result : User will see list of recipes which include the ingredient that he typed.
 ```
 
