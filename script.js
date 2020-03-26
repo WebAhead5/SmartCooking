@@ -4,6 +4,7 @@ var recByIngredient = [];
 // Fetching from the main page
 
 url = "https://cors-anywhere.herokuapp.com/http://www.recipepuppy.com/api/";
+
 fetch(url)
 
     .then(function (response) {
@@ -11,6 +12,7 @@ fetch(url)
     })
 
     .then(function set_data(data) {
+
         for (let i = 0; i < data.results.length; i++) {
             recipiesList.push({ href: data.results[i].href, ingredients: data.results[i].ingredients, thumbnail: data.results[i].thumbnail, title: data.results[i].title });
 
@@ -21,6 +23,7 @@ fetch(url)
 
         }
     });
+
     
     // Fetching from page with the Ingredient that the user entered
 
@@ -51,6 +54,7 @@ fetch(url)
     
     }
     
+
 
 // Checking if the user has an input for the Ingredient and afterwards taking the data either from the main page
 // or using the data from the page that user is searching for.
@@ -123,6 +127,7 @@ function get_ingredient() {
 
     }
 
+
     if (inputIngredient != "") {
 
         var my_list2 = document.createElement("ul");
@@ -150,7 +155,6 @@ function get_ingredient() {
     }
 
 }
-
 function clearBox(elementID) {
 
     document.getElementById(elementID).innerHTML = "";
