@@ -3,7 +3,7 @@ var recByIngredient = [];
 
 // Fetching from the main page
 
-url = "https://www.recipepuppy.com/api/";
+url = ""https://cors-anywhere.herokuapp.com/http://www.recipepuppy.com/api/"";
 
 fetch(url)
 
